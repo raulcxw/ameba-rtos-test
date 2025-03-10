@@ -11,7 +11,7 @@ jobs:
     uses: ./.github/workflows/ameba_cross_build_template.yml
     strategy:
       matrix:
-        ic: [amebalite, amebasmart, amebadplus]
+        ic: [amebasmart]
         build_stage_suffix: [B1, B2, B3, B4, B5, B6]
     with:
       ic_name: ${{ matrix.ic }}
