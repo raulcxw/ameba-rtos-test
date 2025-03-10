@@ -22,14 +22,14 @@ jobs:
 #          - os: macos-latest
 #            shell: bash
 
-#          - os: windows-latest
-#            shell: bash
+          - os: windows-latest
+            shell: bash
             
-#          - os: windows-latest
-#            shell: cmd
+          - os: windows-latest
+            shell: cmd
 
-#          - os: windows-latest
-#            shell: powershell
+          - os: windows-latest
+            shell: powershell
 
 
     steps:
