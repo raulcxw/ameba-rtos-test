@@ -16,8 +16,8 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: ubuntu-latest
-            shell: bash
+#          - os: ubuntu-latest
+#            shell: bash
 
 #          - os: macos-latest
 #            shell: bash
@@ -28,8 +28,8 @@ jobs:
 #          - os: windows-latest
 #            shell: cmd
 
-#          - os: windows-latest
-#            shell: powershell
+          - os: windows-latest
+            shell: powershell
 
 
     steps:
