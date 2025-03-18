@@ -46,7 +46,7 @@ jobs:
           brew update
           brew install cmake ninja jq
         else
-          choco install cmake ninja wget jq -y --no-progress
+          choco install cmake make ninja wget jq -y --no-progress
         fi
 
         python -m pip install --upgrade pip
