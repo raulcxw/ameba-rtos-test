@@ -83,13 +83,14 @@ jobs:
         
         cd ${{ inputs.ic_name }}_gcc_project
         python menuconfig.py -f ${{ steps.build_config.outputs.build_config }}
-      if: ${{ inputs.build_stage_name != 'B0' }}
+      if: ${{ inputs.build_stage_name != 'B0' }} 
         
     - name: Build
       run: |
         echo "Build Current shell is ${{ matrix.shell }}"
         cd ${{ inputs.ic_name }}_gcc_project
         python build.py
+      if: ${{ inputs.ic_name != 'amebasmart' && runner.os == 'Windows' }}
 
     - name: Post-Build Cleanup
       run: |
